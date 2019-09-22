@@ -8,6 +8,17 @@ mongoose.connect(
   "mongodb://localhost/reactreadinglist"
 );
 
+const userProfile = [
+  {
+    userName: "aaa",
+    passWord: "111"
+  },
+  {
+    userName: "bbb",
+    passWord: "222"
+  }
+];
+
 const bookSeed = [
   {
     title: "The Dead Zone",
@@ -122,6 +133,19 @@ const bookSeed = [
     date: new Date(Date.now())
   }
 ];
+
+db.User
+  .remove({})
+  .then(() => db.Book.collection.insertMany(userProfile))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
 
 db.Book
   .remove({})

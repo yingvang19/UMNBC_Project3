@@ -31,17 +31,17 @@ export default App
 
 // function App() {
 //   return (
-//     <Router>
-//       <div>
-//         <Nav />
-//         <Switch>
-//           <Route exact path="/" component={Books} />
-//           <Route exact path="/books" component={Books} />
-//           <Route exact path="/books/:id" component={Detail} />
-//           <Route component={NoMatch} />
-//         </Switch>
-//       </div>
-//     </Router>
+    // <Router>
+    //   <div>
+    //     <Nav />
+    //     <Switch>
+    //       <Route exact path="/" component={Books} />
+    //       <Route exact path="/books" component={Books} />
+    //       <Route exact path="/books/:id" component={Detail} />
+    //       <Route component={NoMatch} />
+    //     </Switch>
+    //   </div>
+    // </Router>
 //   );
 // }
 

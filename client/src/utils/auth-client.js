@@ -1,6 +1,6 @@
 import client from './api-client'
 
-const localStorageKey = '__bookshelf_token__'
+const localStorageKey = '__primitrade_token__'
 
 function handleUserResponse({user: {token, ...user}}) {
   window.localStorage.setItem(localStorageKey, token)

@@ -94,7 +94,7 @@ function UnauthenticatedApp() {
   return (
     <Centered>
       {/* <Logo width="80" height="80" /> */}
-      <h1>Bookshelf</h1>
+      <h1>PrimiTrade</h1>
       <div css={{display: 'flex'}}>
         <Modal button={<Button css={{marginRight: 6}}>Login</Button>}>
           <ModalTitle>Login</ModalTitle>

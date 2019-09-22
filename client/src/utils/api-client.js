@@ -1,5 +1,6 @@
 function client(endpoint, {body, ...customConfig} = {}) {
-  const token = window.localStorage.getItem('__bookshelf_token__')
+  const token = window.localStorage.getItem('__primitrade_token__')
+  console.log('token granted!')
   const headers = {'content-type': 'application/json'}
   if (token) {
     headers.Authorization = `Bearer ${token}`
@@ -15,7 +16,8 @@ function client(endpoint, {body, ...customConfig} = {}) {
   if (body) {
     config.body = JSON.stringify(body)
   }
-
+  console.log(`${process.env.REACT_APP_API_URL}/${endpoint}`)
+  console.log(config)
   return window
     .fetch(`${process.env.REACT_APP_API_URL}/${endpoint}`, config)
     .then(r => r.json())
