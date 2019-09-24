@@ -1,0 +1,57 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "A chatroom powered by React and Websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": " node server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "build": "webpack -p --config webpack.config.prod.js",
+    "server": "run-s build prod"
+  },
+ 
+  "keywords": [
+    "React",
+    "Websocket",
+    "Chatroom"
+  ],
+
+
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.22.0",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^3.2.0",
+    "eslint-plugin-react": "^7.11.1",
+    "express": "^4.14.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "log4js": "^4.1.0",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sass-loader": "^5.0.1",
+    "socket.io": "^2.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-hot-middleware": "^2.16.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "open-browsers": "^1.1.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-middleware": "^1.12.2",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
